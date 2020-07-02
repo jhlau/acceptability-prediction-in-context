@@ -11,6 +11,12 @@ device="cuda:6"
 
 echo "Model = $model (bidir)"
 
+#unzip unigram stats pickle for xlnet if it's zipped
+if [ -f $unigram_pickle.gz ]
+then
+    gunzip $unigram_pickle.gz
+fi
+
 ####################################################
 #using out-of-context human ratings as ground truth#
 ####################################################
