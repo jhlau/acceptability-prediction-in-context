@@ -4,7 +4,7 @@
 - transformers==3.0.0
 - pytorch-transformers=1.2.0 (for reproducing GPT-2 results in paper)
 
-Note: since pytorch-transformers were upgraded to transformers, the new GPT-2 results are little different. Most acceptability measures are about the same, but SLOR has improved. If you want to reproduce the GPT-2 results in the paper, use the XXX script.
+Note: since pytorch-transformers were upgraded to transformers, the new GPT-2 results are little different. Most acceptability measures are about the same, but normLP and SLOR have improved. If you want to reproduce the GPT-2 results in the paper, use the XXX script.
 
 The exact environment that was run on:
 ```
