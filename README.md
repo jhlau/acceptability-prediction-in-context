@@ -2,7 +2,7 @@
 
 - python3.6
 - transformers==3.0.0
-- pytorch-transformers=1.2.0 (for GPT-2)
+- pytorch-transformers==1.2.0 (for GPT-2)
 
 The exact environment that the code is tested:
 ```
