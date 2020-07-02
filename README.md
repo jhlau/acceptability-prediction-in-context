@@ -53,14 +53,13 @@ urllib3==1.25.9
 # Acceptability Prediction
 
 - Code for computing the acceptability measures (LP, MeanLP, etc) using the transformer models are under **code/**
-- To reproduce the results in the paper, use the following scripts:
+- To reproduce the results in the paper, use the following scripts under code/:
   - GPT2: run_gpt.sh
   - BERT (cased): run_bert_cased.sh
   - BERT (uncased): run_bert_uncased.sh
   - XLNet(unidirectional context): run_xlnet_unidir.sh
   - XLNet (bidirectional context): run_xlnet_bidir.sh
-  
-Main program for computing the acceptability measures and assessing them against human ratings is _compute_model_score.py_
+- Main program for computing the acceptability measures and assessing them against human ratings is _compute_model_score.py_
 
 ```
 usage: compute_model_score.py [-h] -r HUMAN_RATING_PICKLE -i INPUT_CSV -m
