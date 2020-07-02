@@ -1,9 +1,10 @@
 # Requirements
 
 - python3.6
-- pytorch-transformers==1.2.0
+- transformers==3.0.0
+- pytorch-transformers=1.2.0 (for re-producing GPT-2 results)
 
-Note: the transformers version is very very old admittedly, and there are plans to update the code to use the newer version of transformers (August)
+Note: since pytorch-transformers were upgraded to transformers, the new GPT-2 results are little different. Most acceptability measures are about the same, but SLOR is no longer as bad (the odd results in the original paper). If you want to reproduce the GPT-2 results in the paper, use the XXX script.
 
 The exact environment that was run on:
 ```
@@ -13,7 +14,9 @@ certifi==2020.6.20
 chardet==3.0.4
 click==7.1.2
 cycler==0.10.0
+dataclasses==0.7
 docutils==0.15.2
+filelock==3.0.12
 future==0.18.2
 idna==2.10
 jmespath==0.10.0
@@ -21,6 +24,7 @@ joblib==0.16.0
 kiwisolver==1.2.0
 matplotlib==3.2.2
 numpy==1.19.0
+packaging==20.4
 pandas==1.0.5
 patsy==0.5.1
 Pillow==7.2.0
@@ -37,9 +41,11 @@ scipy==1.5.0
 sentencepiece==0.1.91
 six==1.15.0
 statsmodels==0.11.1
+tokenizers==0.8.0rc4
 torch==1.2.0
 torchvision==0.4.0
 tqdm==4.47.0
+transformers==3.0.0
 urllib3==1.25.9
 ```
 
